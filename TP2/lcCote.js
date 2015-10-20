@@ -1,5 +1,6 @@
-/*var async = require("async")
+var async = require("async")
 
+/*
     var sync = true;
     var data = null;
     cote(links, function(coteArgus){
