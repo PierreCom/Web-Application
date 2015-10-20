@@ -1,0 +1,40 @@
+{
+	"title": "LaCentrale",
+	"type": "object",
+	"properties": {
+
+		"Brand": {
+      "description" : "Marque",
+			"type": "string"
+		},
+		"Model": {
+      "description" : "Modèle",
+			"type": "string"
+		},
+		"Year": {
+      "description" : "Année",
+			"type": "integer",
+      "minimum": 0
+		},
+    "Power": {
+      "description" : "Puissance",
+      "type": "integer",
+      "minimum": 1
+    },
+    "Fuel": {
+      "description" : "Carburant",
+      "type": "string",
+    },
+    "Gearbox": {
+      "description" : "Boîte de Vitesse",
+      "type": "string",
+    },
+    "NumberofDoor": {
+      "description" : "Nombre de Portes",
+      "type": "integer",
+      "minimum": 1
+    }
+	},
+
+	"required": ["Marque", "Modèle", "Millesime"]
+}

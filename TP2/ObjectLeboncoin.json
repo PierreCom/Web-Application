@@ -1,0 +1,35 @@
+{
+	"title": "Leboncoin",
+	"type": "object",
+	"properties": {
+
+		"Brand": {
+      "description" : "Marque",
+			"type": "string"
+		},
+		"Model": {
+      "description" : "Modèle",
+			"type": "string"
+		},
+		"Year": {
+      "description" : "Année",
+			"type": "integer",
+      "minimum": 0
+		},
+    "KM": {
+      "description" : "Kilométrage",
+      "type": "integer",
+      "minimum": 0
+    },
+    "Fuel": {
+      "description" : "Carburant",
+      "type": "string",
+    },
+    "Gearbox": {
+      "description" : "Boîte de Vitesse",
+      "type": "string",
+    }
+	},
+
+	"required": ["Marque", "Modèle", "Année-modèle", "Kilométrage", "Carburant", "Boîte de vitesse"]
+}

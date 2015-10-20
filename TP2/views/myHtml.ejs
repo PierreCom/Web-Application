@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Cote Argus</title>
+	<link type="text/css" rel="stylesheet" href="/style.css">
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+<div class="table-title">
+<h3><u>Cote Argus</u></h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Version</th>
+<th class="text-left">Price</th>
+</tr>
+</thead>
+<h2>Price of your car on Leboncoin: <%= price %> &#x20AC;</h2>
+<tbody class="table-hover">
+<%
+
+    for(var i = 0 ; i <= nbCotes-1 ; i++) {
+	%>
+	
+<tr>
+	<td class="text-left"><%= versions[i] %></td>
+	<td class="text-left"><%= cotes[i] %> &#x20AC;</td>
+</tr>
+	<%
+		}
+    %>
+
+</table>
+  
+
+  </body>
+                        
+
+
+
+            
+        
+
